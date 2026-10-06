@@ -11,13 +11,22 @@ internal class Program
 
         try
         {
-            for (int i = 0; i < oMiArreglo.N; i++)
-            {
-                oMiArreglo.Agregar(i * 3);
-            }
+            oMiArreglo.Agregar(10);
+            oMiArreglo.Agregar(5);
+            oMiArreglo.Agregar(-4);
+
+            Console.WriteLine(oMiArreglo);
+            Console.ReadKey();
+
+            oMiArreglo.Insertar(200,1);
+
+            // for (int i = 0; i < oMiArreglo.N; i++)
+            // {
+            //    oMiArreglo.Agregar(i * 3);
+            //   }
         }
 
-        catch(Exception ex)
+        catch (Exception ex)
         {
             Console.WriteLine(ex.Message);
         }
