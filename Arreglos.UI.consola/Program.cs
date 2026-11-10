@@ -18,7 +18,11 @@ internal class Program
             Console.WriteLine(oMiArreglo);
             Console.ReadKey();
 
-            oMiArreglo.Insertar(200,1);
+            oMiArreglo.Insertar(200,-50);
+
+            Console.WriteLine(oMiArreglo);
+
+            oMiArreglo.Eliminar(0);
 
             // for (int i = 0; i < oMiArreglo.N; i++)
             // {
